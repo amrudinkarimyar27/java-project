@@ -1,0 +1,196 @@
+/* Style for the navigation bar */
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.brand-title {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.navbar-button ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-button li {
+    list-style: none;
+}
+
+.navbar-button li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+}
+
+.navbar-button li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-button {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-button ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-button ul li {
+        text-align: center;
+    }
+
+    .navbar-button ul li a {
+        padding: 10px 16px;
+    }
+
+    .navbar-button.active {
+        display: flex;
+    }
+}
+
+.container {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.contact-box {
+    display: flex;
+    background: lightblue;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 20px 40px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    padding: 20px 40px;
+    background: blue;
+    color: white;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+
+}
+
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+
